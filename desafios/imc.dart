@@ -19,7 +19,7 @@ void main(List<String> args) {
   double imc = double.parse(weight.toString()) /
       (double.parse(height.toString()) * double.parse(height.toString()));
 
-  print('\nSeu imc é de ' + imc.toStringAsPrecision(4));
+  print('\nSeu imc é de ' + imc.toStringAsFixed(2));
   if (imc < 18.5) {
     print('\nSeu estado é: MAGREZA');
   } else if (imc >= 18.5 && imc <= 24.9) {
